@@ -25,7 +25,6 @@ for todo in todos:
     if checkbox:
         todos.remove(todo)
         functions.write_file(todos)
-        del st.session_state[todo]
         st.rerun()
 
 
